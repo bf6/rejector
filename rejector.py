@@ -33,7 +33,7 @@ engine = sa.create_engine('sqlite:///:memory:', echo=True)
 Base.metadata.create_all(engine)
 db_session = sessionmaker(bind=engine)()
 
-tags = [Tag(name=k) for k in ['Douchey', 'Fat', 'Slimy']]
+tags = [Tag(name=k) for k in ['Strange', 'Creepy', 'Weird facial hair']]
 users = [
     User(name='Brian', age='24'),
     User(name='Rebecca', age='26')
